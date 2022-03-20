@@ -1,5 +1,14 @@
 Browser homepage using [Tilde](https://github.com/cadejscroggins/tilde) with some minor tweaks.
 
+Some tweaks include:
+
+- custom keys (cp: connectedpapers, gl: gitlab, etc.)
+- light/dark theme automatically changes based on time
+- queries are opened in the same tab
+
+(Separate, but related) I'm also using the [New Tab Override](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/)
+since firefox is lame with letting you set custom URLs for new tabs.
+
 # Tilde
 
 
