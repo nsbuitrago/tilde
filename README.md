@@ -1,4 +1,7 @@
+Browser homepage using [Tilde](https://github.com/cadejscroggins/tilde) with some minor tweaks.
+
 # Tilde
+
 
 Inspired by [r/startpages](https://www.reddit.com/r/startpages)&mdash;the idea
 is to have a browser homepage that is functional and sexy.
