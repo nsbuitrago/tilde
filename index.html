@@ -5,20 +5,14 @@
 <title>~</title>
 
 <script>
+  var currentTime = new Date().getHours();
+  if (7<= currentTime&&currentTime < 19) {
+    styleTheme = 'tilde-light';
+  } else {
+    styleTheme = 'tilde-dark'
+  }
   const CONFIG = {
-    /**
-     * Choose a predefined theme:
-     *
-     * - "ashes-dark"
-     * - "gruvbox-dark"
-     * - "nord-dark"
-     * - "ocean-light"
-     * - "tilde-dark"
-     * - "tokyo-dark"
-     *
-     * Alternatively, create your own in the <style> tag below!
-     */
-    theme: 'tilde-dark',
+    theme: styleTheme,
 
     /**
      * Action to take when the clock is clicked. Options include:
@@ -265,50 +259,10 @@
 </script>
 
 <style>
+
   /* themes */
-
-  .ashes-dark {
-    --base-background: #1c2023;
-    --base-foreground: #c7ccd1;
-    --command-color-complementary: var(--base-background);
-    --command-color-highlight-foreground: var(--base-foreground);
-    --command-color-lightness: 68%;
-    --command-color-saturation: 25%;
-    --help-command-background: #272e32;
-  }
-
-  .gruvbox-dark {
-    --base-background: #282828;
-    --base-foreground: #ebdbb2;
-    --command-color-complementary: #fbf1c7;
-    --command-color-highlight-foreground: var(--base-background);
-    --command-color-lightness: 45%;
-    --command-color-saturation: 34%;
-    --help-command-background: #3c3836;
-  }
-
-  .nord-dark {
-    --base-background: #2e3440;
-    --base-foreground: #d8dee9;
-    --command-color-complementary: #fff;
-    --command-color-highlight-foreground: var(--help-command-background);
-    --command-color-lightness: 56%;
-    --command-color-saturation: 42%;
-    --help-command-background: #3b4252;
-  }
-
-  .ocean-light {
-    --base-background: #eff1f5;
-    --base-foreground: #4f5b66;
-    --command-color-complementary: var(--base-background);
-    --command-color-highlight-foreground: var(--base-foreground);
-    --command-color-lightness: 56%;
-    --command-color-saturation: 32%;
-    --help-command-background: #e4e6ea;
-  }
-
   .tilde-dark {
-    --base-background: #111;
+    --base-background: #101010;
     --base-foreground: #ddd;
     --command-color-complementary: #eee;
     --command-color-highlight-foreground: var(--base-background);
@@ -316,15 +270,14 @@
     --command-color-saturation: 40%;
     --help-command-background: #222;
   }
-
-  .tokyo-dark {
-    --base-background: #1a1b26;
-    --base-foreground: #a9b1d6;
-    --command-color-complementary: var(--base-background);
-    --command-color-highlight-foreground: var(--base-foreground);
-    --command-color-lightness: 72%;
-    --command-color-saturation: 89%;
-    --help-command-background: #24283b;
+  .tilde-light {
+    --base-background: #f2f4f8;
+    --base-foreground: #000;
+    --command-color-complementary: #111;
+    --command-color-highlight-foreground: var(--base-background);
+    --command-color-lightness: 50%;
+    --command-color-saturation: 40%;
+    --help-command-background: var(--base-background)
   }
 
   /* root variables */
@@ -1315,6 +1268,7 @@
     }
   }
 
+  
   $.bodyClassAdd(CONFIG.theme);
 
   const help = new Help({
