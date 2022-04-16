@@ -149,7 +149,7 @@
     commands: [
       {
         key: '*',
-        search: '/q={}',
+        search: '/{}',
         url: 'https://www.duckduckgo.com',
       },
       {
@@ -261,6 +261,11 @@
         key: '0',
         name: 'Local',
         url: 'http://localhost:3000',
+      },
+      {
+        key: 'maps',
+        name: 'MAPS lab notebook',
+        url: 'http://nsbuitrago.gitlab.io/maps-notebook'
       },
     ].map((command) => {
       const hsla = (hue, saturation = 'var(--command-color-saturation)') =>
