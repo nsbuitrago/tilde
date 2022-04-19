@@ -149,7 +149,7 @@
     commands: [
       {
         key: '*',
-        search: '/{}',
+        search: '/',
         url: 'https://www.duckduckgo.com',
       },
       {
@@ -218,12 +218,6 @@
         url: 'https://github.com',
       },
       {
-        hues: ['25', '10'],
-        key: 'gl',
-        name: 'GitLab',
-        url: 'https://gitlab.com',
-      },
-      {
         hues: ['201', '221'],
         key: 'l',
         name: 'LinkedIn',
@@ -263,9 +257,10 @@
         url: 'http://localhost:3000',
       },
       {
+        hues: ['254', '232'],
         key: 'maps',
         name: 'MAPS lab notebook',
-        url: 'http://nsbuitrago.gitlab.io/maps-notebook'
+        url: 'http://notion.so/maps-project',
       },
     ].map((command) => {
       const hsla = (hue, saturation = 'var(--command-color-saturation)') =>
