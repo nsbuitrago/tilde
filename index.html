@@ -39,29 +39,16 @@
 
   // prettier-ignore
   const COMMANDS = new Map([
-    ['a', { name: 'Alphabet', searchTemplate: '/search?q={}', suggestions: ['a/cal', 'a/drive'], url: 'https://google.com' }],
     ['a/cal', { url: 'https://calendar.google.com' }],
     ['a/drive', { url: 'https://drive.google.com/drive/u/0/my-drive' }],
-    ['c', { name: 'Cloudflare', url: 'https://dash.cloudflare.com' }],
-    ['f', { name: 'Figma', url: 'https://www.figma.com' }],
-    ['g', { name: 'GitHub', searchTemplate: '/search?q={}', suggestions: ['g/copilot', 'g/trending'], url: 'https://github.com' }],
-    ['i', { name: 'Intuit', url: 'https://selfemployed.intuit.com/home' }],
-    ['o', { name: 'OpenAI', url: 'https://chatgpt.com' }],
-    ['p', { name: 'Proton', searchTemplate: '/u/0/all-mail#keyword={}', suggestions: ['p/drive', 'p/pass'], url: 'https://mail.proton.me/u/0/inbox' }],
-    ['p/drive', { url: 'https://drive.proton.me/u/0/' }],
-    ['p/pass', { url: 'https://pass.proton.me/u/0/' }],
-    ['s', { name: 'Supabase', url: 'https://supabase.com/dashboard/projects' }],
-    ['t', { name: 'TickTick', suggestions: ['t/habits', 't/pomo'], url: 'https://ticktick.com/webapp/#q/today/tasks' }],
-    ['t/habits', { url: 'https://ticktick.com/webapp/#q/all/habit' }],
-    ['t/pomo', { url: 'https://ticktick.com/webapp/#focus' }],
-    ['v', { name: 'Vercel', url: 'https://vercel.com/dashboard' }],
-    ['x', { name: 'xvvvyz', suggestions: ['x/torrent', 'x/proxy', 'x/droplet'], url: 'https://xvvvyz.xyz' }],
-    ['x/droplet', { url: 'https://cloud.digitalocean.com/projects/50ffcff7-ad65-40e3-af88-3cbc5a38cf99/resources' }],
-    ['x/proxy', { url: 'https://proxy.xvvvyz.xyz' }],
-    ['x/torrent', { url: 'https://torrent.xvvvyz.xyz' }],
+    ['y', { name: 'YouTube', searchTemplate: '/search?q={}' url: 'https://youtube.com' }],
+    ['x', { name: 'X', searchTemplate: '/results?search_query={}' url: 'https://x.com' }],
+    ['r', { name: 'Reddit', searchTemplate: '/search?q={}' url: 'https://reddit.com' }],
+    ['s', { url: 'https://sciwheel.com' }],
+    ['b', { url: 'https://benchling.com' }],
+    ['n/pkgs', { name: 'Nix', searchTemplate: '/packages?channel=unstable&query={}' url: 'https://search.nixos.org' }],
+    ['g', { name: 'GitHub', searchTemplate: '/search?q={}', suggestions: ['g/trending'], url: 'https://github.com' }],
     ['0', { name: 'local', suggestions: ['0:54323', '0:54324'], url: 'http://localhost:3000' }],
-    ['0:54323', { url: 'http://localhost:54323' }],
-    ['0:54324', { url: 'http://localhost:54324' }],
   ]);
 </script>
 
